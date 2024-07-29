@@ -1,3 +1,8 @@
-import { createApp } from "vue";
-import prueba from '../components/prueba.vue'
-createApp(prueba).mount("#nueva");
+export default { 
+    clickeando(){
+        console.log("clickeando desde prueba");
+    },
+    clickeando2(){
+        console.log("segundo click");
+    }
+}

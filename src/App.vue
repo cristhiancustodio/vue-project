@@ -1,29 +1,39 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import prueba from './components/prueba.vue'
-import paginador from './components/paginador.vue'
-</script>
-
 <template>
-	<header>
-		<img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-		<div class="wrapper">
-			<HelloWorld msg="You did it!" />
+	<nav>
+		<div id="nav">
+			<router-link to="/bienvenido" >Bienvenido</router-link>
+			<router-link to="/iteracion" >Inicio</router-link>
+			<router-link to="/home" >Hombe</router-link>
+			<router-link to="/about" >Nosotros</router-link>
+			<router-link to="/empresas" >Empresas</router-link>
 		</div>
-	</header>
-
+		<div>
+			<button @click="redirect()" >izquierida</button>
+			<button @click="back()" >centro</button>
+			<button @click="forward()" >derecha</button>
+		</div>
+	</nav>
+	<br>
 	<main>
-		<prueba respuesta="esta es mi respuesta" />
-
-
-		<paginador/>
-
-
+		<router-view></router-view>
 	</main>
 </template>
+<script>
+export default {
+	methods: {
+		redirect(){
 
+			this.$router.go(-1);
+		},
+		back(){
+			this.$router.push({ name : "bienvenido" });
+		},
+		forward(){
+			this.$router.go(1);
+		}
+	},
+}
+</script>
 <style scoped>
 header {
 	line-height: 1.5;
