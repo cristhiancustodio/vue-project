@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as c,a as s}from"./index-DsIPiOvA.js";const n={},t=s("h1",null,"Buenas noches",-1),a=[t];function _(r,l){return c(),o("div",null,a)}const f=e(n,[["render",_]]);export{f as default};

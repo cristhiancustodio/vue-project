@@ -1,0 +1,1 @@
+import{_ as r,c as t,a,t as s,o}from"./index-DsIPiOvA.js";const n={data(){return{nombre:this.$route.params.nombre}},mounted(){this.nombre==="cristhian"&&(this.nombre=this.nombre+" agregado")}};function c(i,m,p,l,e,u){return o(),t("div",null,[a("h1",null,"Esta es una vista de la empresa "+s(e.nombre),1)])}const _=r(n,[["render",c]]);export{_ as default};

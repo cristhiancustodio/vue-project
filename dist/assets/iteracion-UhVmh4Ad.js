@@ -1,0 +1,1 @@
+import{_ as n,c as t,F as s,f as o,o as e,a as l,t as c}from"./index-DsIPiOvA.js";const i={data(){return{lista:[1,2,3,4,5,6,6]}}};function u(p,_,d,f,r,m){return e(),t("table",null,[(e(!0),t(s,null,o(r.lista,a=>(e(),t("tr",null,[l("td",null,c(a),1)]))),256))])}const B=n(i,[["render",u]]);export{B as default};
